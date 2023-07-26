@@ -6,10 +6,14 @@ class products {
     };
 }
 
-var product1 = new products(1, 7, 'Blue & Black');
+let id = document.getElementById('inputId').value;
+let size = document.getElementById('inputSize').value;
+let color = document.getElementById('inputColor').value;
+
+var product1 = new products(id,size,color);
 console.log(product1);
 
-document.body.innerHTML = `
+document.getElementById('div').innerHTML = `
     <ul>
         <li>ID:${product1.id}</li>
         <li>Size:${product1.size}</li>
